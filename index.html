@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glowing Image</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+		        }
+
+        .text {
+            margin-bottom: 30px;
+            font-size: 24px;
+	    color: #00FFFF
+        }
+
+        .glow-box {
+            padding: 100px;
+            border-radius: 15px;
+            animation: glow 4s infinite linear;
+        }
+
+        .glow-box img {
+            display: block;
+            width: 400px;
+            border-radius: 10px;
+        }
+
+        @keyframes glow {
+            0%   { box-shadow: 0 0 10px red, 0 0 20px red; }
+            25%  { box-shadow: 0 0 10px blue, 0 0 20px blue; }
+            50%  { box-shadow: 0 0 10px lime, 0 0 20px lime; }
+            75%  { box-shadow: 0 0 10px yellow, 0 0 20px yellow; }
+            100% { box-shadow: 0 0 10px red, 0 0 20px red; }
+        }
+
+        /* Corner number */
+        .corner-number {
+            position: fixed;
+            top: 10px;      /* change to bottom:10px for bottom corner */
+            right: 10px;    /* change to left:10px for left corner */
+            font-size: 14px;
+            color: white;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="text">Vyyu! Sdc k AB Myno:Zbylklvi cryevn'xd cmkx sd(10)<br><br><br>
+    <div class="glow-box">
+        <img src="Rickrolling_QR_code.png" alt="Glowing Image">
+    </div>
+
+
+
+</body>
+</html>
